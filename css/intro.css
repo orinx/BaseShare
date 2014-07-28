@@ -122,13 +122,14 @@ License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike
 
 .story{
 	margin: 0 auto;
-	min-width: 980px;
+	min-width: 360px;
 	overflow: auto;
-	width: 980px;
+	width: 80%;
 }
 
 .story .float-left, .story .float-right{
 	padding: 100px 0 0 0;
 	position: relative;
-	width: 350px;	
+	min-width: 200px;
+    width:auto;
 }
