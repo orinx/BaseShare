@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Costum CSS -->
+  <link href="css/app.css" rel="stylesheet">
+
+
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">開啓選單</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><label class="glyphicon glyphicon-home"></label>&nbsp;空間借用系統</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#"><label class="glyphicon glyphicon-globe"></label>&nbsp;近日活動</a></li>
+        <li><a href="#"><label class="glyphicon glyphicon-calendar"></label>&nbsp;活動總覽</a></li>
+        <li><a href="#"><label class=" glyphicon glyphicon-info-sign"></label>&nbsp;空間介紹</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><label class="glyphicon glyphicon-plus"></label>&nbsp;登記活動</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><label class="glyphicon glyphicon-user"></label>&nbsp; 訪客 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">登入</a></li>
+            <li><a href="#">註冊</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <blockquote>
+      <h2>空間使用登記</h2>
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="eventName" class="col-sm-2 control-label">活動名稱</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="eventName" placeholder="專家開講 - 那些在研究室裡的日子">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactWindow" class="col-sm-2 control-label">聯絡人</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="contactWindow" placeholder="人類研究社社長 - 舅仕擬">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactMobile" class="col-sm-2 control-label">聯絡方式</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="contactMobile" placeholder="手機：0912-345-678 / 公司 02-1234-5678 轉分機 404">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="placeRoom" class="col-sm-2 control-label">借用場地</label>
+            <div class="col-sm-1">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="B01">
+                  B01
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-1">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="B02">
+                  B02
+                </label>
+              </div>
+            </div>
+           <div class="col-sm-1">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="B03">
+                  B03
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="theDate" class="col-sm-2 control-label">借用日期</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="theDate" placeholder="2001-10-10">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="startHour startMin" class="col-sm-2 control-label">開始時間</label>
+            <div class="col-sm-2">
+              <select class="form-control" id="startHour">
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+              </select>
+            </div>
+            <div class="col-sm-2">
+              <select class="form-control" id="startMin">
+                <option>00</option>
+                <option>15</option>
+                <option>30</option>
+                <option>45</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="endHour endMin" class="col-sm-2 control-label">結束時間</label>
+            <div class="col-sm-2">
+              <select class="form-control" id="endHour">
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+              </select>
+            </div>
+            <div class="col-sm-2">
+              <select class="form-control" id="endMin">
+                <option>00</option>
+                <option>15</option>
+                <option>30</option>
+                <option>45</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="descrip" class="col-sm-2 control-label">用途</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" id="descrip" rows="3" placeholder="作為人類研究社，我們一年一度的..."></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">送出審核</button>
+            </div>
+          </div>
+        </form>
+    </blockquote>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="container">
+    <p class="text-muted">空間借用系統 2014 &copy; <a href="http://orinx.com" target="_blank">Orin Chen</a>, Fork me on <a href="https://github.com/orinx/BaseShare" target="_blank">Github</a></p>
+  </div>
+</div>
+
+<!-- Load Javascript Library -->
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap JS -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- Under Score JS -->
+<script type="text/javascript" src="js/calendar.min.js"></script>
+<!-- JSTZ -->
+<scirpt type="text/javascript" src="js/jstz.min.js"></scirpt>
+<!-- Custom Cal JS -->
+<script type="text/javascript" src="js/cal.js"></script>
+</body>
+</html>
